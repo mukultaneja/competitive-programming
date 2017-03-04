@@ -1,0 +1,16 @@
+{
+  "name": "Deloitte Excercise",
+  "authors": [
+    "mukultaneja <mukul.taneja@gramener.com>"
+  ],
+  "description": "Deloitte Exercise",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "d3": "3.5",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "d3-tip": "^0.7.1"
+  }
+}

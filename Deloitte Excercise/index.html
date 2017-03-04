@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Deloitte Exercise</title>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ static_url('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" />
+		<link rel="stylesheet" href="{{ static_url('css/style.css') }}" />
+	</head>
+	<body>
+
+		<!--- Header Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 header">
+					<h4 class="text-center">Deloitte Exercise</h4>
+				</div>
+			</div>
+		</div>
+		<br />
+
+		<!--- Filters Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<form name="filter-form" class="form-inline">
+		        	<div class="col-md-12 col-xs-12 text-center">
+		                <div class="form-group col-md-3 col-xs-3">
+		                    <b>Year</b> &nbsp;&nbsp; 
+		                    <select class="form-control" name="year"></select>
+		                </div>
+		                <div class="form-group col-md-3 col-xs-3">
+		                    <b>Industry</b> &nbsp;&nbsp;
+		                    <select class="form-control" name="industry"></select>
+		                </div>
+		                <div class="form-group col-md-3 col-xs-3">
+		                    <b>Brand Name</b> &nbsp;&nbsp;
+		                    <select class="form-control" name="brand"></select>
+		                </div>
+		                <div class="form-group col-md-3 col-xs-3">
+		                    <button type="submit" class="btn btn-default submit">Submit</button>
+		                </div>
+		       		</div>
+		       		<div class="col-md-12 col-xs-12">
+		       			<div class="col-md-5 col-xs-5"></div>
+						<div class="form-group attrib col-md-7 col-xs-7"></div>
+		       		</div>
+			    </form>
+			</div>
+		</div>
+		<br />
+
+		<!--- Component Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="loader" style="display: none">
+						<img src="/static/images/ajax-loader.gif" />
+					</div>
+					<div class="col-md-12 col-xs-12 exercise"></div>
+				</div>
+			</div>
+		</div>
+		<br />
+
+		<!--- Table Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="loader" style="display: none">
+						<img src="/static/images/ajax-loader.gif" />
+					</div>
+					<div class="col-md-12 col-xs-12 table-data"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--- JS Libraries -->
+		<script type="text/javascript" src="{{ static_url('bower_components/jquery/dist/jquery.min.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('bower_components/d3/d3.min.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('bower_components/d3-tip/index.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('js/script.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('js/d3-legend.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('js/scatterplot.js') }}"></script>
+		<script type="text/javascript" src="{{ static_url('js/utility.js') }}"></script>
+	</body>
+</html>

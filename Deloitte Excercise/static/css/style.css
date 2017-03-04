@@ -1,0 +1,19 @@
+
+/*
+	CSS Styles for index.html
+ */
+
+body { overflow-x: hidden; font-size: 13px; }
+.header { background-color: black; color: white; margin-top: 10px; margin-left: 0px; height: 50px; }
+.header h4 { font-size: 24px; position: relative; top: 4px; letter-spacing: 5px; }
+a { background-color: black !important; border-color: black !important; color: white; width: 100px; border-radius: 0px; margin-left: 10px; }
+input[type="checkbox"] { margin: 12px; position: relative; bottom: -1px; }
+div.table-data { font-size: 12px; }
+.d3-tip { line-height: 1; font-weight: bold; padding: 12px; background: rgba(0, 0, 0, 0.8); color: #fff; border-radius: 2px; }
+.d3-tip:after { box-sizing: border-box; display: inline; font-size: 10px; width: 100%; line-height: 1; color: rgba(0, 0, 0, 0.8); content: "\25BC"; position: absolute; text-align: center; }
+.d3-tip.n:after { margin: -1px 0 0 0; top: 100%; left: 0; }
+.legend rect { fill: white; stroke: black; opacity: 0.8; width: 153px; height: 61px }
+div.loader img { height: 160px; width: 150px; position: relative; left: 43%; top: 52px }
+div.attrib { position: relative; top: 20px; }
+.axis path, .axis line { fill: none; stroke: black; shape-rendering: crispEdges; }
+.line { stroke: black; fill: none; stroke-width: 1; }
